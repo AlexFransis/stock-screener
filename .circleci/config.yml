@@ -9,7 +9,7 @@ jobs:
     environment:
       LEIN_ROOT: nbd
       JVM_OPTS: -Xmx3200m
-    step:
+    steps:
       - checkout
       - restore_cache:
           key: stock-screener-{{ checksum "project.clj" }}
